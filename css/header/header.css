@@ -1,0 +1,11 @@
+.header-title {
+    align-items: center;
+    background-image: url('../../img/header.jpg');
+    background-repeat: no-repeat;
+    background-position: center left;
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    border-radius: 10px 10px 0 0;
+}

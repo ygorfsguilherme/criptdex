@@ -1,0 +1,20 @@
+.alerta {
+	display: flex;
+	padding: 15px;
+	border-radius: 8px;
+	margin: 6px 0;
+}
+
+.alerta-info {
+	background: lightcyan;
+	color: darkcyan;
+}
+
+.alerta-perigo {
+	background: indianred;
+	color: darkred;
+}
+
+#msg-error{
+	display: none;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cripdex - DeCodificador</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/header/header.css">
+    <link rel="stylesheet" href="css/main/main.css">
+    <link rel="stylesheet" href="css/main/alerta.css">
+    <link rel="stylesheet" href="css/main/formulario.css">
+    <link rel="stylesheet" href="css/style-criptex.css">
+    <link rel="stylesheet" href="css/footer/footer.css">
+
+    <script src="js/codificar-decodificar.js" defer></script>
+    <script src="js/msg-input-copy.js" defer></script>
+</head>
+
+<body>
+    <div class="box">
+        <header class="header-title">
+            <h2>Cripdex - DeCodificador</h2>
+        </header>
+
+        <main>
+            <section>
+                <div class="alerta alerta-info">
+                    Não e aceito caracteres especiais e nem acentos, apenas letras.
+                </div>
+
+                <div class="alerta alerta-perigo" id="msg-error">
+                    Por favor! digite algo.
+                </div>
+            </section>
+
+            <section>
+                <label for="">{De}Codificar texto:</label>
+                <div class="formulario__grupo">
+                    <input class="formulario__entrada" type="text" id="codificar"
+                    placeholder="Digite o texto ou chave">
+
+                    <button class="formulario__botao__limpar" onclick="limparEntrada()">
+                        <img class="formulario__botao__limpar_icone" height=24px; src="./img/backspace.svg">
+                    </button>
+                </div>
+
+                <button class="botao" onclick="codificar()">Codificar</button>
+
+                <button class="botao" onclick="decodificar()">Decodificar</button>
+            </section>
+
+            <section>
+
+                <label for="">Chave decodificadora:</label>
+                <div class="formulario__grupo">
+                    <input class="formulario__entrada" type="text" id="decodificar"
+                    placeholder="Digite o texto ou chave">
+
+                    <button class="formulario__botao__copiar" onclick="copiaTexto()" id='btn_copia'>
+                        <img class="formulario__botao__copiar__icone" height=24px; src="./img/clipboard-check.svg">
+                    </button>
+                </div>
+
+            </section>
+        </main>
+
+        <footer>
+            <div class="rede__social">
+                <a href="https://www.linkedin.com/in/ygorfsguilherme">
+                    <img src="./img/linkedin.svg">
+                </a>
+
+                <a href="https://github.com/M1R4I-N1KK1">
+                    <img src="./img/github.svg">
+                </a>
+
+                <a href="https://t.me/M1R41_N1KK1">
+                    <img src="./img/telegram.svg">
+                </a>
+            </div>
+
+            <p class="copyright">
+                Challenges - ONE: Copyright 2022
+            </p>
+
+            <p class="creator">
+                Criado por <a href="#">Ygor Guilherme</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
